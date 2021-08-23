@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>CuitanKu</title>
+			<meta charset ="UTF-8" />
+			<meta name    ="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel     ="stylesheet" href="assets/css/style.css">
+		
+			<link href="assets/css/font/all.css" rel="stylesheet"> <!--load all styles | font awesome-->
+		</head>
+
+		<body onLoad="startTime()">
+		 	<header></header>
+		 	<main>	
+		 		<div class="container">
+
+					<h4 id="date" class=""></h4>
+	          		<h3 id="time" class=""></h3>
+					<h2 class="">TEMPERATURE CONVERSION</h2>
+					
+       				<div>
+       					<select name="from" id="from" onchange="select()">
+       						<option value="cel">Celcius</option>
+       						<option value="far">Fahrenheit</option>
+       						<option value="rea">Reamur</option>
+       					</select>
+       				</div>
+       				<div class="">To</div>
+       				<div><select name="to" id="to" onchange="select()">
+       						<option value="cel">Celcius</option>
+       						<option value="far">Fahrenheit</option>
+       						<option value="rea">Reamur</option>
+       					</select>
+       				</div>
+
+  					<div>
+  						<input type="number" name="kmh" id="num1" placeholder="some number" onkeypress="validate(event)" onkeyup="conv()">
+  					</div>
+
+  				<div class="">=</div>
+   			
+
+  				<input type="number" placeholder="Result" id="result" disabled>
+
+   				<P class="">Change Background Color</P>
+
+  				<input id= "ubah" placeholder="color in English">
+  				<button type="button" onclick="ubahbg()">Change</button>
+
+  				</div>
+			</main>
+			<footer></footer>
+
+
+			<script type="text/javascript" src="assets/font/all.js"></script>
+	    	<script type="text/javascript" src="assets/js/js.js"></script>
+  		</body>
+
+	</html>
+
